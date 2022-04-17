@@ -25,7 +25,6 @@ services:
       - 8085:8080
 
   socios-back:
-    container_name: socios-back
     build:
       context: ./backend
       args:
@@ -37,5 +36,5 @@ services:
     depends_on:
       - mysql_db
     ports:
-      - 8096:8096
+      - 8096-8099:8096
     restart: always
